@@ -26,9 +26,9 @@ int main() {
         printf("VITEJTE V KASINU!\n");
         printf("\nVas aktualni zustatek je: %d kreditu.\n \n", balance);
         printf("HLAVNI NABIDKA:\n");
-        printf("1. Automaty\n");
-        printf("2. Zavod Pomlcek\n");
-        printf("3. Do kolko?\n");
+        printf("1. Automaty (vsadite 15 kreditu)\n");
+        printf("2. Zavod Pomlcek (vsadite 5 kreditu) \n");
+        printf("3. Do kolko? (vsadite 10 kreditu)\n");
         printf("\n4. Ulozit zustatek a ukoncit hru\n");
 
         int choice;
