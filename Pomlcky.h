@@ -14,6 +14,7 @@ void dashRace(int* balance) {
     *balance -= bet; // Odčítání vkladu
 
     printf("Hra 'Zavod Pomlcek' - Vsadili jste %d kreditu.\n", bet);
+    printf("Vyherni pomlcka prinasi 5nasobek vkladu!!!\n");
     printf("Vyberte pomlcku (1, 2 nebo 3): ");
     int playersChoice;
     scanf("%d", &playersChoice);
@@ -56,5 +57,12 @@ void dashRace(int* balance) {
     }
     else {
         printf("Nevyhravate. Vas zustatek je nyni %d kreditu.\n", *balance);
+    }
+    char znovuHRA;
+    printf("Chces hrat znovu? (y/n)\n");
+    scanf(" %c", &znovuHRA);
+
+    if (znovuHRA == 'y' || znovuHRA == 'Y') {
+        dashRace(balance);
     }
 }
