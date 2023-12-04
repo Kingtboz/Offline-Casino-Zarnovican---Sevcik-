@@ -39,4 +39,11 @@ void guessTheNumber(int* balance) {
     else {
         printf("Nevyhravate. Vas zustatek je nyni %d kreditu.\n", *balance);
     }
+            char znovuHra;
+    printf("Chces hrat znovu? (yes/no)\n");
+    scanf(" %c", &znovuHra);
+
+    if (znovuHra == 'y' || znovuHra == 'Y') {
+        guessTheNumber(balance);
+    }
 }
