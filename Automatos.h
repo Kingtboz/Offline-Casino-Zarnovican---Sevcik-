@@ -12,7 +12,7 @@ void slotMachine(int* balance) {
     }
 
     *balance -= bet; // Odčítání vkladu
-
+    printf("Neni risk, neni zisk!!!\n");
     printf("Hra 'Automaty' - Vsadili jste %d kreditu.\n", bet);
 
     int num1 = rand() % 10; // První náhodné číslo od 0 do 9
@@ -28,5 +28,12 @@ void slotMachine(int* balance) {
     }
     else {
         printf("Cisla se neshoduji. Vas zustatek je nyni %d kreditu.\n", *balance);
+    }
+    char znovuHRa;
+    printf("Chces hrat znovu? (yes/no)\n");
+    scanf(" %c", &znovuHRa);
+
+    if (znovuHRa == 'y' || znovuHRa == 'Y') {
+        guessTheNumber(balance);
     }
 }
